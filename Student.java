@@ -1,18 +1,28 @@
-package com.tg.arraysdemo1;
+package com.tg.arraylisttest;
 
 public class Student {
+    private String id;
     private String name;
     private int age;
-    private double height;
+    private String address;
 
     public Student(){
 
     }
 
-    public Student(String name,int age,double height){
+    public Student(String id, String name, int age, String address) {
+        this.id = id;
         this.name = name;
         this.age = age;
-        this.height = height;
+        this.address = address;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -31,17 +41,11 @@ public class Student {
         this.age = age;
     }
 
-    public double getHeight() {
-        return height;
+    public String getAddress() {
+        return address;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    @Override
-    public String toString() {
-        return "学生姓名:" + getName() + "年龄" + getAge() + "身高" + getHeight();
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
-

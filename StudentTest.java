@@ -1,4 +1,4 @@
-package com.tg.arraysdemo1;
+package com.tg37.arraylistdemo;
 
 import java.util.Arrays;
 import java.util.Comparator;
